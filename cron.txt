@@ -1,0 +1,14 @@
+# m h dom mon dow   command
+# watchdog
+* * * * * cd ~/jeeves/ && ./start_jeeves.py --silent-start >> all.log 2>&1 &
+# restart once a day
+59 23 * * * cd ~/jeeves/ && ./stop_jeeves.py >> all.log 2>&1 &
+
+
+
+
+
+
+
+
+
